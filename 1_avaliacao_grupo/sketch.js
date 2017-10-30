@@ -1,3 +1,5 @@
+var img;
+var smallPoint, largePoint, pointillize, pix;
 
 function preload() {
   img = loadImage("Eva.jpg");

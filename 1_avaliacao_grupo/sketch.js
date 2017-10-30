@@ -2,7 +2,7 @@
 var x, y, t, v, factorCrescimento, xAnterior, yAnterior, pix;
 var img;
 function preload() {
-  img = loadImage("EVA.png");
+  img = loadImage("Eva.jpg");
 }
 function setup() 
 {

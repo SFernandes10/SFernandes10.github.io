@@ -1,5 +1,5 @@
 
-var x, y, t, v, factorCrescimento, xAnterior, yAnterior, pix;
+var x, y, t, v, factorCrescimento, xAnterior, yAnterior, pix, SGV;
 var img;
 function preload() {
   img = loadImage("Eva.jpg");

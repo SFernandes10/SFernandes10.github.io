@@ -17,7 +17,7 @@ function setup()
   v = 30;
   t = v;
   factorCrescimento = 2;
- 
+  pix = loadImage
 }
 
 

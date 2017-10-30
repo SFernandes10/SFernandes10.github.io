@@ -1,12 +1,12 @@
 
-var x, y, t, v, factorCrescimento, xAnterior, yAnterior, pix, SGV;
+var x, y, t, v, factorCrescimento, xAnterior, yAnterior, pix;
 var img;
 function preload() {
   img = loadImage("Eva.jpg");
 }
 function setup() 
 {
-  createCanvas (596, 842, SVG);
+  createCanvas (596, 842);
   
   image(img, 0, 0);
   x = width/2;

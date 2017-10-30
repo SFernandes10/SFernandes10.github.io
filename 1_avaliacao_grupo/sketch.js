@@ -23,7 +23,7 @@ function setup()
 
 function draw() 
 {
-  if (frameCount%50 === 0) background (255,10);
+  if (frameCount%50 === 0) background (255);
   x += random(-v, v);
   y += random(-v, v);
 
@@ -37,7 +37,6 @@ function draw()
 
   t +=factorCrescimento;
  
-  var pix = img.get(x,y);
   noFill();
   stroke (pix, 128);
   line(xAnterior, yAnterior, x, y);

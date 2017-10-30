@@ -45,16 +45,3 @@ function draw()
   xAnterior = x;
   yAnterior = y;
 }
-
-
-function keyPressed()
-{
-  if (key === "1")
-  {
-    noLoop();
-    save("meuProjecto.svg");
-
-  }
-
-
-}

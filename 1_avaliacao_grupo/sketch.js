@@ -1,46 +1,23 @@
 
-var x, y, t, v, factorCrescimento, xAnterior, yAnterior, pix;
-var img;
 function preload() {
   img = loadImage("Eva.jpg");
 }
-function setup() 
-{
-  createCanvas (596, 842);
-  
-  image(img, 0, 0);
-  x = width/2;
-  y = height/2;
-  xAnterior = x;
-  yAnterior = y;
 
-  v = 30;
-  t = v;
-  factorCrescimento = 2;
-  pix = loadImage
+function setup() {
+  createCanvas(720, 400);
+  smallPoint = 4;
+  largePoint = 40;
+  imageMode(CENTER);
+  noStroke();
+  background(255);
+  img.loadPixels();
 }
 
-
-function draw() 
-{
-  if (frameCount%50 === 0) background (255);
-  x += random(-v, v);
-  y += random(-v, v);
-
-  if (x<=0) x +=t;
-  if (x>=width) x-=t;
-  if (y<=0) y+=t;
-  if (y>=height) y-=t;
-
-  if (t>30 ||t<0) factorCrescimento*=-1;
- 
-
-  t +=factorCrescimento;
- 
-  noFill();
-  stroke (pix, 128);
-  line(xAnterior, yAnterior, x, y);
-
-  xAnterior = x;
-  yAnterior = y;
+function draw() {
+  var pointillize = map(mouseX, 0, width, smallPoint, largePoint);
+  var x = floor(random(img.width));
+  var y = floor(random(img.height));
+  var pix = img.get(x, y);
+  fill(pix, 128);
+  ellipse(x, y, pointillize, pointillize);
 }

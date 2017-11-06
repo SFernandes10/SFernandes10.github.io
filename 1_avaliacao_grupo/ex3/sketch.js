@@ -2,7 +2,7 @@
 
 var x,y,xFolha,yFolha,v,t,tamanho, img;
 
-function preload() {img = loadImage("../ex3/eva.png");  // Load the image
+function preload() {img = loadImage("../ex3/eva.png");  //Carrega a imagem
 }
 
 function setup() 
@@ -19,13 +19,13 @@ function setup()
 
 
 function draw() {
-  strokeWeight(10);
-  stroke(39,82,89);
-  rect(4,4, 420, 370);
-  rect(4,190, 588, 560);
+    strokeWeight(10);
+     stroke(39,82,89);
+       rect(4,4, 420, 370);
+         rect(4,190, 588, 560);
   if (frameRate%50);
   background (48,81,80,10);
-  image(img, 0, y/2, img.x/2, img.y/2);
+   image(img, 0, y/2, img.x/2, img.y/2);
   xFolha += random(-v,v);
   yFolha += random(-v,v);
 

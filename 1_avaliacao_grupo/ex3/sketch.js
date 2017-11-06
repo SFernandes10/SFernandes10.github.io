@@ -2,13 +2,12 @@
 
 var x,y,xFolha,yFolha,v,t,tamanho, img;
 
-function preload() {
+function preload() {img = loadImage("../ex3/eva.png");  // Load the image
 }
 
 function setup() 
 {
   createCanvas (596, 842);
-  img = loadImage("ex3/eva.png");  // Load the image
   xFolha=596;
   yFolha=842;
   v=100;

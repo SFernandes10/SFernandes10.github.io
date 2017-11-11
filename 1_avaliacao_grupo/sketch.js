@@ -1,7 +1,7 @@
 var xFolha,yFolha,factorCrescimento,  ponto1, ponto2;
 var cores=[];
 
-function preload() {img = loadImage("../ex3/eva.png");  //Carrega a imagem
+function preload() {img = loadImage("../eva.png");  //Carrega a imagem
 }
 
 function setup() 
